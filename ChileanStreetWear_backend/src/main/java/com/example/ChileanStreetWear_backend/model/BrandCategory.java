@@ -6,15 +6,14 @@ import lombok.*;
 
 import java.io.Serializable;
 
-@Entity
-@Table(name = "brand_category")
-@Getter
-@Setter
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
+@Getter
+@Setter
+@Entity
+@Table(name = "brand_category")
 public class BrandCategory implements Serializable {
-
 
 
     @EmbeddedId
